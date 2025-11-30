@@ -7,17 +7,16 @@ WORKDIR /app
 # 1. Copia todos os arquivos (Já fizemos este commit)
 COPY . .
 
-# 2. Restaura explicitamente a Solução
-RUN dotnet restore BancoDeItens_V3.sln
+# 2. NOVO PASSO CRUCIAL: Limpa as pastas de cache de build locais.
+# Isso garante que o 'dotnet restore' e 'dotnet publish' rodem em um estado limpo,
+# sem arquivos 'obj' ou 'bin' antigos que podem confundir o compilador.
+RUN find . -type d -name "obj" -exec rm -rf {} + && \
+    find . -type d -name "bin" -exec rm -rf {} +
 
-# 3. NOVO: Força a compilação de toda a Solução ANTES da publicação.
-# Isso garante que todas as referências internas sejam resolvidas e construídas.
-# Usamos --no-restore pois já rodamos o restore no passo anterior.
-RUN dotnet build BancoDeItens_V3.sln --no-restore -c Release
-
-# 4. Publica apenas o projeto da API, usando os binários construídos.
-# Usamos --no-build para não compilar novamente, apenas empacotar o que já foi construído.
-RUN dotnet publish "src/BancoItens.Api/BancoItens.Api.csproj" --no-build -c Release -o /publish /p:UseAppHost=false /p:RuntimeIdentifier=linux-x64
+# 3. Restaura e Publica TUDO em um único comando
+# A flag /p:RestorePackagesPath força o NuGet a usar um cache específico,
+# mas vamos tentar a forma mais simples primeiro:
+RUN dotnet publish "src/BancoItens.Api/BancoItens.Api.csproj" -c Release -o /publish /p:UseAppHost=false /p:RuntimeIdentifier=linux-x64
 
 #------------------------------------------------------------------
 # Estágio 2: Imagem de Produção Final (RUNTIME)
