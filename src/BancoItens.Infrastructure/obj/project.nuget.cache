@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JV3NOeYvV7M=",
+  "dgSpecHash": "lkmBQiPTLHo=",
   "success": true,
-  "projectFilePath": "C:\\Desen\\BancoDeItens_old\\src\\BancoItens.Infrastructure\\BancoItens.Infrastructure.csproj",
+  "projectFilePath": "C:\\Desen\\BancoDeItens_V3\\src\\BancoItens.Infrastructure\\BancoItens.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cliente\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Cliente\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
