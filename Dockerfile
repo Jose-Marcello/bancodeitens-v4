@@ -4,20 +4,25 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
-# 1. Cria um diretório para cache NuGet
+# 1. Cria o diretório para cache NuGet
 RUN mkdir -p /nuget_cache
 
-# 2. Copia todos os arquivos
-COPY . .
+# 2. Copia a Solution e os Projetos para o cache de layer
+COPY BancoDeItens_V3.sln .
+COPY src/ src/
 
-# 3. Restaura e Publica TUDO em um único comando, FORÇANDO o caminho do cache.
-# Esta é a correção crítica: /p:RestorePackagesPath direciona a restauração
-# e a busca por pacotes para um local consistente e acessível.
+# 3. Restaura explicitamente e FORÇADAMENTE (Ignorando cache e baixando tudo)
+RUN dotnet restore BancoDeItens_V3.sln \
+    /p:RestorePackagesPath=/nuget_cache \
+    /p:RestoreForce=true
+
+# 4. Publica apenas o projeto da API, usando os pacotes restaurados.
+# Usamos --no-restore para que ele utilize os pacotes que acabamos de baixar.
 RUN dotnet publish "src/BancoItens.Api/BancoItens.Api.csproj" \
     -c Release -o /publish \
     /p:UseAppHost=false \
     /p:RuntimeIdentifier=linux-x64 \
-    /p:RestorePackagesPath=/nuget_cache
+    --no-restore
 
 #------------------------------------------------------------------
 # Estágio 2: Imagem de Produção Final (RUNTIME)
