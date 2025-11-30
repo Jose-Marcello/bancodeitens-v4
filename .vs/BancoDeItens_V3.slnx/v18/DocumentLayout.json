@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Desen\\BancoDeItens_V3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7FC39401-7116-DB1E-DF8B-F15FE72BB79F}|..\\BancoDeItens_old\\src\\BancoItens.Api\\BancoItens.Api.csproj|c:\\desen\\bancodeitens_old\\src\\bancoitens.api\\bancoitens.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7FC39401-7116-DB1E-DF8B-F15FE72BB79F}|..\\BancoDeItens_old\\src\\BancoItens.Api\\BancoItens.Api.csproj|c:\\desen\\bancodeitens_old\\src\\bancoitens.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,14 +30,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BancoItens.Api",
-              "DocumentMoniker": "C:\\Desen\\BancoDeItens_old\\src\\BancoItens.Api\\BancoItens.Api.csproj",
-              "RelativeDocumentMoniker": "..\\BancoDeItens_old\\src\\BancoItens.Api\\BancoItens.Api.csproj",
-              "ToolTip": "C:\\Desen\\BancoDeItens_old\\src\\BancoItens.Api\\BancoItens.Api.csproj",
-              "RelativeToolTip": "..\\BancoDeItens_old\\src\\BancoItens.Api\\BancoItens.Api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-30T16:29:40.364Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Desen\\BancoDeItens_old\\src\\BancoItens.Api\\Program.cs",
+              "RelativeDocumentMoniker": "..\\BancoDeItens_old\\src\\BancoItens.Api\\Program.cs",
+              "ToolTip": "C:\\Desen\\BancoDeItens_old\\src\\BancoItens.Api\\Program.cs",
+              "RelativeToolTip": "..\\BancoDeItens_old\\src\\BancoItens.Api\\Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAnwB8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T19:39:08.686Z",
               "EditorCaption": ""
             }
           ]
