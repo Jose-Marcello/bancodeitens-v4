@@ -2,6 +2,7 @@
   <Folder Name="/Itens de Solução/">
     <File Path="Dockerfile" />
     <File Path="NuGet.config" />
+    <File Path="src/BancoItens.Api/.gitignore" />
   </Folder>
   <Project Path="../BancoDeItens_old/src/BancoItens.Api/BancoItens.Api.csproj" />
   <Project Path="../BancoDeItens_old/src/BancoItens.Application/BancoItens.Application.csproj" />
