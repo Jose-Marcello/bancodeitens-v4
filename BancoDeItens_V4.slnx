@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="src/BancoItens_Application/BancoItens.Application.csproj" />
+  <Project Path="src/BancoItens_Domain/BancoItens_Domain/BancoItens.Domain.csproj" />
+  <Project Path="src/BancoItens_Infrastructure/BancoItens.Infrastructure.csproj" />
+  <Project Path="src/BancoItens_WebApi/BancoItens.WebApi.csproj" />
+</Solution>
