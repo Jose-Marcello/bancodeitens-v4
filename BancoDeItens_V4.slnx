@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Itens de Solução/">
+    <File Path="bancodeitens-v4Dockerfile" />
+  </Folder>
   <Project Path="src/BancoItens_Application/BancoItens.Application.csproj" />
   <Project Path="src/BancoItens_Domain/BancoItens_Domain/BancoItens.Domain.csproj" />
   <Project Path="src/BancoItens_Infrastructure/BancoItens.Infrastructure.csproj" />
