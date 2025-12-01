@@ -5,6 +5,7 @@ C:\Desen\BancoDeItens_V4\src\BancoItens_Domain\BancoItens_Domain\obj\Debug\net8.
 C:\Desen\BancoDeItens_V4\src\BancoItens_Domain\BancoItens_Domain\obj\Debug\net8.0\BancoItens.Domain.AssemblyInfoInputs.cache
 C:\Desen\BancoDeItens_V4\src\BancoItens_Domain\BancoItens_Domain\obj\Debug\net8.0\BancoItens.Domain.AssemblyInfo.cs
 C:\Desen\BancoDeItens_V4\src\BancoItens_Domain\BancoItens_Domain\obj\Debug\net8.0\BancoItens.Domain.csproj.CoreCompileInputs.cache
+C:\Desen\BancoDeItens_V4\src\BancoItens_Domain\BancoItens_Domain\obj\Debug\net8.0\BancoItens.Domain.sourcelink.json
 C:\Desen\BancoDeItens_V4\src\BancoItens_Domain\BancoItens_Domain\obj\Debug\net8.0\BancoItens.Domain.dll
 C:\Desen\BancoDeItens_V4\src\BancoItens_Domain\BancoItens_Domain\obj\Debug\net8.0\refint\BancoItens.Domain.dll
 C:\Desen\BancoDeItens_V4\src\BancoItens_Domain\BancoItens_Domain\obj\Debug\net8.0\BancoItens.Domain.pdb

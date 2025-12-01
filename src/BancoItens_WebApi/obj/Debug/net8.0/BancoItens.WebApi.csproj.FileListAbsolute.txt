@@ -4,7 +4,9 @@ C:\Desen\BancoDeItens_V4\src\BancoItens_WebApi\obj\Debug\net8.0\BancoItens.WebAp
 C:\Desen\BancoDeItens_V4\src\BancoItens_WebApi\obj\Debug\net8.0\BancoItens.WebApi.AssemblyInfoInputs.cache
 C:\Desen\BancoDeItens_V4\src\BancoItens_WebApi\obj\Debug\net8.0\BancoItens.WebApi.AssemblyInfo.cs
 C:\Desen\BancoDeItens_V4\src\BancoItens_WebApi\obj\Debug\net8.0\BancoItens.WebApi.csproj.CoreCompileInputs.cache
+C:\Desen\BancoDeItens_V4\src\BancoItens_WebApi\obj\Debug\net8.0\BancoItens.WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Desen\BancoDeItens_V4\src\BancoItens_WebApi\obj\Debug\net8.0\BancoItens.WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Desen\BancoDeItens_V4\src\BancoItens_WebApi\obj\Debug\net8.0\BancoItens.WebApi.sourcelink.json
 C:\Desen\BancoDeItens_V4\src\BancoItens_WebApi\bin\Debug\net8.0\appsettings.Development.json
 C:\Desen\BancoDeItens_V4\src\BancoItens_WebApi\bin\Debug\net8.0\appsettings.json
 C:\Desen\BancoDeItens_V4\src\BancoItens_WebApi\bin\Debug\net8.0\BancoItens.WebApi.staticwebassets.endpoints.json
@@ -50,7 +52,6 @@ C:\Desen\BancoDeItens_V4\src\BancoItens_WebApi\bin\Debug\net8.0\BancoItens.Infra
 C:\Desen\BancoDeItens_V4\src\BancoItens_WebApi\bin\Debug\net8.0\BancoItens.Application.pdb
 C:\Desen\BancoDeItens_V4\src\BancoItens_WebApi\bin\Debug\net8.0\BancoItens.Domain.pdb
 C:\Desen\BancoDeItens_V4\src\BancoItens_WebApi\bin\Debug\net8.0\BancoItens.Infrastructure.pdb
-C:\Desen\BancoDeItens_V4\src\BancoItens_WebApi\obj\Debug\net8.0\BancoItens.WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Desen\BancoDeItens_V4\src\BancoItens_WebApi\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Desen\BancoDeItens_V4\src\BancoItens_WebApi\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Desen\BancoDeItens_V4\src\BancoItens_WebApi\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

@@ -6,7 +6,7 @@ namespace BancoItens.Application.Interface
     public interface IDisciplinaService
     {
         // Obtém todas as questões.
-        Task<IEnumerable<Questao>> GetAllDisciplinasAsync();
+        Task<IEnumerable<Disciplina>> GetAllDisciplinasAsync();
 
         // Adiciona uma nova questão, incluindo validações ou lógica de negócio, se necessário.
         Task AddDisciplinaAsync(Disciplina disciplina);

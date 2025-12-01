@@ -8,6 +8,7 @@ C:\Desen\BancoDeItens_V4\src\BancoItens_Application\obj\Debug\net8.0\BancoItens.
 C:\Desen\BancoDeItens_V4\src\BancoItens_Application\obj\Debug\net8.0\BancoItens.Application.AssemblyInfoInputs.cache
 C:\Desen\BancoDeItens_V4\src\BancoItens_Application\obj\Debug\net8.0\BancoItens.Application.AssemblyInfo.cs
 C:\Desen\BancoDeItens_V4\src\BancoItens_Application\obj\Debug\net8.0\BancoItens.Application.csproj.CoreCompileInputs.cache
+C:\Desen\BancoDeItens_V4\src\BancoItens_Application\obj\Debug\net8.0\BancoItens.Application.sourcelink.json
 C:\Desen\BancoDeItens_V4\src\BancoItens_Application\obj\Debug\net8.0\BancoIte.0BC37E2A.Up2Date
 C:\Desen\BancoDeItens_V4\src\BancoItens_Application\obj\Debug\net8.0\BancoItens.Application.dll
 C:\Desen\BancoDeItens_V4\src\BancoItens_Application\obj\Debug\net8.0\refint\BancoItens.Application.dll
