@@ -1,0 +1,48 @@
+# .github/workflows/azure-deploy-backend.yml
+
+name: Deploy API to ACA
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      - 'Dockerfile'
+      
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    # 1. Login no Azure usando a Entidade de Serviço (Service Principal)
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: 9cdc0b73-fe9b-4ad5-bdbe-88061cf97f60 # Sua ID da Assinatura
+        creds: ${{ secrets.AZURE_SECRET }}
+        enable-concurrent: true
+
+    # 2. Build e Push da Imagem Docker para o ACR
+    - name: Build and push Docker image to ACR
+      uses: azure/docker-login@v1
+      with:
+        login-server: novobancodeitenscr.azurecr.io
+        username: ${{ secrets.AZURE_CLIENT_ID }}
+        password: ${{ secrets.AZURE_SECRET }}
+    
+    - run: |
+        docker build . -t novobancodeitenscr.azurecr.io/api-bancodeitens-qa:${{ github.sha }} -f Dockerfile
+        docker push novobancodeitenscr.azurecr.io/api-bancodeitens-qa:${{ github.sha }}
+
+    # 3. Deploy da nova imagem no Azure Container Apps (ACA)
+    - name: Deploy to Azure Container Apps
+      uses: azure/container-apps-deploy-action@v1
+      with:
+        container-app-name: api-bancodeitens-qa
+        resource-group: rg-bolao-aca-prod # Seu Grupo de Recursos
+        image-to-deploy: novobancodeitenscr.azurecr.io/api-bancodeitens-qa:${{ github.sha }}
+        acr-name: novobancodeitenscr
