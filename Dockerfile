@@ -19,7 +19,7 @@ WORKDIR /app
 EXPOSE 8080
 
 # Copia os arquivos publicados
-COPY --from=build /publish .
+COPY --from=build /publish . 
 
 # Comando final para rodar a aplicação (Apenas a DLL principal)
 CMD ["dotnet", "BancoItens.WebApi.dll"]
