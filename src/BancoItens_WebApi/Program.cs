@@ -6,7 +6,7 @@ using BancoItens.Infrastructure.Data;
 using BancoItens.Infrastructure.Data.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Text.RegularExpressions;
+using System.Text.RegularExpressions; 
 
 var builder = WebApplication.CreateBuilder(args);
 
